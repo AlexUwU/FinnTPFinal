@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6668243304690090026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6668243304690090024}
+  - component: {fileID: 6668243304690090025}
+  m_Layer: 0
+  m_Name: DungeonTemplate
+  m_TagString: Dungeon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6668243304690090024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6668243304690090026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.3516445, y: -2.403309, z: -0.07434754}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6668243304690090025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6668243304690090026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c98da2fc96161e43aa229bd9f46a8b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottonDungeon:
+  - {fileID: 3478509420791076907, guid: 6f13ace33374b77448ffdd8ac765c489, type: 3}
+  - {fileID: 9114711366339791302, guid: f33dabfe055429a42a61482c1513e4e7, type: 3}
+  - {fileID: 1717614044408311894, guid: 821262afc053a42458684b6859df368c, type: 3}
+  - {fileID: 5556235067623653489, guid: c6ed22b7e4bf5344fbf728ffd06b69c3, type: 3}
+  topDungeon:
+  - {fileID: 7540350366294107516, guid: 4a89869bb145ddb46aa870205e4d7c55, type: 3}
+  - {fileID: 2871375559094571111, guid: cac3bb0bb705d6f40bf3e6f9ae9b7d50, type: 3}
+  - {fileID: 5556235067623653489, guid: c6ed22b7e4bf5344fbf728ffd06b69c3, type: 3}
+  - {fileID: 1437075476551152292, guid: 3d9cd50c2efd7f7409d468959814ea15, type: 3}
+  leftDungeon:
+  - {fileID: 1625382881517321727, guid: 844dab1b88da34e49b78bb8b52939e73, type: 3}
+  - {fileID: 9114711366339791302, guid: f33dabfe055429a42a61482c1513e4e7, type: 3}
+  - {fileID: 2905218425318016039, guid: 5b8b35445f4f30540b92c9e9ceb8d12d, type: 3}
+  - {fileID: 7540350366294107516, guid: 4a89869bb145ddb46aa870205e4d7c55, type: 3}
+  rightDungeon:
+  - {fileID: 2905218425318016039, guid: 5b8b35445f4f30540b92c9e9ceb8d12d, type: 3}
+  - {fileID: 4858380538749412493, guid: 4089b6e448baf0a4aba6e135a1706e31, type: 3}
+  - {fileID: 1717614044408311894, guid: 821262afc053a42458684b6859df368c, type: 3}
+  - {fileID: 1437075476551152292, guid: 3d9cd50c2efd7f7409d468959814ea15, type: 3}
