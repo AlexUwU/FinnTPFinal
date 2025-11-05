@@ -1,0 +1,900 @@
+fileFormatVersion: 2
+guid: e646dd6c8f0e7284e9fe474d86d1e870
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sign Monster Dark_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 318
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498a0d366912aee4e86ba1a536eac083
+      internalID: -1071397257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 318
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259e2e1adcb2e88448a5f007533214d9
+      internalID: 417295366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_4
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 318
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bf5db784531944aa176ad38f11d787
+      internalID: -961583017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 318
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902e1f33bde985948b7d1eece69ce541
+      internalID: 1218894200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 318
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5242f337babfa468231a93e234f28e
+      internalID: -96547189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_7
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 318
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29f87710d025b84cbcef3ca3110b3ff
+      internalID: 1155553363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 318
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22372a343f6a5bd4489361b781b25fa6
+      internalID: 1154191973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_9
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 318
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05bce140ccfa534696df4c5b8544d8d
+      internalID: 1153422807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 244
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7d3fa2882ee0e4cbf2e4ffd5a29b48
+      internalID: -984442660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 244
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e0cc73ec320f5409c0d7d9bee06356
+      internalID: -20389319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_14
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 244
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2150217025ac1a4e95848ac531ff0e5
+      internalID: 148267788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_15
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 244
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85280db7f756db40a54c55bed302fa5
+      internalID: -502811939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 244
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2603ea81dc9b63a48993d363a94c180d
+      internalID: 1034675629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_17
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 244
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fc72e02a23f9740b96ed4cbdc20ecb
+      internalID: -1728925734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_18
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 244
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0affadffd12bb45b6c51bd083d8a44
+      internalID: 1304025082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_19
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 244
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eda095c08fa4c84e90b46a1965b362c
+      internalID: 887573435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_24
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 170
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4284253f132d140a11970f253283d6
+      internalID: 491603065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_25
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 170
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa6a1d2341497349968e7ae94ef7180
+      internalID: -1635505128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_26
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 170
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48eac5b1f0c6714383c51ea799c290e
+      internalID: -2058801246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_27
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 170
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034d3fa4a380870429f8448f05e1e6cb
+      internalID: -778706624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_28
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 170
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c1d9ff20a9f604c961049d9c062a4f
+      internalID: 24794374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_29
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 170
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e010f2c35f8bb448de07250a3561dc
+      internalID: 1988620800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_30
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 170
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cd87cc7a8df4946bcea521f31dced0
+      internalID: 424470477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_31
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 170
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b882097eab3e9a54fa1375641fd17fe1
+      internalID: -1920530953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_32
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 170
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b168562ab329c2a4fbe0b8657ee92583
+      internalID: -921878456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_37
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 96
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdd01b84a7960e42908892cc1866f7f
+      internalID: 564387385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_38
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 96
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a9f5d9d139a274fbf578a1a0ff7bd9
+      internalID: 1996386462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_39
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 96
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ccedb798711c042a62ba88f5f2c0d3
+      internalID: -1979430924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_40
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 96
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d52ad72e072ae4cbe1cf8b44745c0b
+      internalID: 611112800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_41
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 96
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce911573547cf94e8bf68c1960f00f7
+      internalID: 355851667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_42
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 96
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c157dbf9c52677f4796d3e5d9ed2449a
+      internalID: 1774598610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sign Monster Dark_43
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 96
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68130c1e08cbc94c8894a90d9f1ec69
+      internalID: 1375895097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sign Monster Dark_44: 125303243
+      Sign Monster Dark_76: 1558971725
+      Sign Monster Dark_32: -921878456
+      Sign Monster Dark_52: -1916009607
+      Sign Monster Dark_64: -1325577544
+      Sign Monster Dark_80: -1303054960
+      Sign Monster Dark_54: -1718547598
+      Sign Monster Dark_104: 621637376
+      Sign Monster Dark_100: -507189282
+      Sign Monster Dark_47: 164105723
+      Sign Monster Dark_37: 564387385
+      Sign Monster Dark_17: -1728925734
+      Sign Monster Dark_43: 1375895097
+      Sign Monster Dark_98: -508492319
+      Sign Monster Dark_33: -1074971887
+      Sign Monster Dark_9: 1153422807
+      Sign Monster Dark_105: 1920984236
+      Sign Monster Dark_77: -1672496757
+      Sign Monster Dark_66: 1355207590
+      Sign Monster Dark_92: 1645065798
+      Sign Monster Dark_11: 128440728
+      Sign Monster Dark_53: 117936075
+      Sign Monster Dark_74: -846890440
+      Sign Monster Dark_5: 1218894200
+      Sign Monster Dark_63: 1693459660
+      Sign Monster Dark_93: 1675860890
+      Sign Monster Dark_58: -1942487403
+      Sign Monster Dark_65: 1783903628
+      Sign Monster Dark_83: 2095213655
+      Sign Monster Dark_57: 113721493
+      Sign Monster Dark_28: 24794374
+      Sign Monster Dark_20: 2071466210
+      Sign Monster Dark_102: -1151535656
+      Sign Monster Dark_4: -961583017
+      Sign Monster Dark_86: -661239945
+      Sign Monster Dark_79: -168048907
+      Sign Monster Dark_24: 491603065
+      Sign Monster Dark_59: -755469448
+      Sign Monster Dark_87: 1032217904
+      Sign Monster Dark_70: 1006166963
+      Sign Monster Dark_89: 143431744
+      Sign Monster Dark_23: -494535730
+      Sign Monster Dark_99: 852937772
+      Sign Monster Dark_8: 1154191973
+      Sign Monster Dark_94: 1626888051
+      Sign Monster Dark_30: 424470477
+      Sign Monster Dark_6: -96547189
+      Sign Monster Dark_51: 693239065
+      Sign Monster Dark_61: 570323300
+      Sign Monster Dark_36: -1416627987
+      Sign Monster Dark_82: 1111897320
+      Sign Monster Dark_56: 2116158948
+      Sign Monster Dark_12: -984442660
+      Sign Monster Dark_10: -444100826
+      Sign Monster Dark_22: -1144135286
+      Sign Monster Dark_2: -1071397257
+      Sign Monster Dark_27: -778706624
+      Sign Monster Dark_68: 1920069165
+      Sign Monster Dark_13: -20389319
+      Sign Monster Dark_81: 58980135
+      Sign Monster Dark_46: 347073276
+      Sign Monster Dark_31: -1920530953
+      Sign Monster Dark_97: -1664716226
+      Sign Monster Dark_103: -98161176
+      Sign Monster Dark_91: 1594248771
+      Sign Monster Dark_0: -1636622109
+      Sign Monster Dark_78: -968499620
+      Sign Monster Dark_3: 417295366
+      Sign Monster Dark_73: -66623640
+      Sign Monster Dark_50: -47166404
+      Sign Monster Dark_71: -523813137
+      Sign Monster Dark_45: -844719482
+      Sign Monster Dark_90: 1285421044
+      Sign Monster Dark_60: -1301958479
+      Sign Monster Dark_16: 1034675629
+      Sign Monster Dark_19: 887573435
+      Sign Monster Dark_101: -1169719161
+      Sign Monster Dark_84: 284716653
+      Sign Monster Dark_48: 1066008672
+      Sign Monster Dark_62: -1885746231
+      Sign Monster Dark_39: -1979430924
+      Sign Monster Dark_75: -624864575
+      Sign Monster Dark_29: 1988620800
+      Sign Monster Dark_34: -1110734583
+      Sign Monster Dark_49: -742609022
+      Sign Monster Dark_35: -766930405
+      Sign Monster Dark_18: 1304025082
+      Sign Monster Dark_38: 1996386462
+      Sign Monster Dark_55: -539206081
+      Sign Monster Dark_1: 986600004
+      Sign Monster Dark_67: 1863194060
+      Sign Monster Dark_96: 1122399197
+      Sign Monster Dark_21: -2090510625
+      Sign Monster Dark_26: -2058801246
+      Sign Monster Dark_72: 2007836705
+      Sign Monster Dark_41: 355851667
+      Sign Monster Dark_40: 611112800
+      Sign Monster Dark_95: 102885503
+      Sign Monster Dark_69: 1988473754
+      Sign Monster Dark_14: 148267788
+      Sign Monster Dark_7: 1155553363
+      Sign Monster Dark_15: -502811939
+      Sign Monster Dark_88: -1709129160
+      Sign Monster Dark_42: 1774598610
+      Sign Monster Dark_85: 898784938
+      Sign Monster Dark_25: -1635505128
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
