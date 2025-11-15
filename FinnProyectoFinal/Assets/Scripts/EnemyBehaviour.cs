@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,22 +28,21 @@ public class EnemyBehaviour : MonoBehaviour
 
     public int valor = 100;
 
-    public AudioClip enemyDead;
+    private AudioSource audioSource;
 
-    // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindWithTag("Player");
         state = StateMachine.INACTIVE;
-        anim= GetComponent<Animator>();
-        speed=minSpeed;
+        anim = GetComponent<Animator>();
+        speed = minSpeed;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        lifeBar.fillAmount = lifeNow/lifeMax;
-        // Debug.Log(CalcDistance());
+        lifeBar.fillAmount = lifeNow / lifeMax;
 
         if (CalcDistance() < rangeAlert)
         {
@@ -52,13 +50,10 @@ public class EnemyBehaviour : MonoBehaviour
             switch (state)
             {
                 case StateMachine.INACTIVE:
-                    // Debug.Log("Inactivo");
                     state = StateMachine.ALERT;
                     break;
                 case StateMachine.ALERT:
-                    // Debug.Log("Alert");
                     speed = minSpeed;
-                    
                     MoveTowardsPlayer();
                     if (CalcDistance() < rangeAttack)
                     {
@@ -66,14 +61,14 @@ public class EnemyBehaviour : MonoBehaviour
                     }
                     break;
                 case StateMachine.ATTACK:
-                    // Debug.Log("attack");
                     speed = maxSpeed;
                     MoveTowardsPlayer();
                     break;
                 default:
                     break;
             }
-        }else
+        }
+        else
         {
             state = StateMachine.INACTIVE;
             anim.SetBool("isWalking", false);
@@ -81,37 +76,33 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (isKnockback)
         {
-            KnockbackMovement();  
+            KnockbackMovement();
             state = StateMachine.ATTACK;
         }
     }
 
-    private void MoveTowardsPlayer() 
+    private void MoveTowardsPlayer()
     {
         Vector2 direction = player.transform.position - transform.position;
         direction.Normalize();
 
-        // Calcular la función de una recta (y = mx) donde 'm' es la pendiente
         float m = direction.y / direction.x;
 
-        // Calcular el desplazamiento en x y en y basado en la velocidad
         float dx = Mathf.Sqrt((speed * speed) / (1 + m * m));
         float dy = m * dx;
 
-        // Invertir los desplazamientos si el jugador está a la izquierda del enemigo
         if (direction.x < 0)
         {
             dx = -dx;
             dy = -dy;
-            sprite.GetComponent<SpriteRenderer>().flipX=true;
-        }else{
-            sprite.GetComponent<SpriteRenderer>().flipX=false;
+            sprite.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            sprite.GetComponent<SpriteRenderer>().flipX = false;
         }
 
-        // Calcular la nueva posición del enemigo
         Vector3 newPosition = transform.position + new Vector3(dx, dy, 0f) * Time.deltaTime;
-
-        // Actualizar la posición del enemigo
         transform.position = newPosition;
     }
 
@@ -142,44 +133,59 @@ public class EnemyBehaviour : MonoBehaviour
         float distance = Mathf.Sqrt(Mathf.Pow(distanceX, 2) + Mathf.Pow(distanceY, 2));
         return distance;
     }
-    
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.CompareTag("ProyectilPlayer"))
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("ProyectilPlayer"))
         {
-            lifeNow -= GameManager.degradeLife;
+            // Usar daño final (upgrades + bonos de partida)
+            lifeNow -= GameManager.CurrentDamage;
+
             StartKnockback(other.gameObject.GetComponent<ProyectileBehaviour>().direction);
             anim.SetTrigger("getHit");
-            if(lifeNow <= 0)
+
+            if (lifeNow <= 0)
             {
-                SoundManager.Instance.audioSource.PlayOneShot(enemyDead, 1f);
                 GameManager.Instance.AddPoint(valor);
-                enemyGenerator.GetComponent<EnemyGenerator>().ContEnemy-=1;
-                CinemachineScreemShake.Instance.moveCamera(7,5,0.1f);
-                Destroy(this.gameObject);
+                enemyGenerator.GetComponent<EnemyGenerator>().ContEnemy -= 1;
+
+                // Reproducir sonido de muerte
+                if (audioSource != null && audioSource.clip != null)
+                {
+                    audioSource.Play();
+                    Destroy(gameObject, audioSource.clip.length / 6f);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
+
+                CinemachineScreemShake.Instance.moveCamera(7, 5, 0.1f);
             }
         }
-        
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.DecreaseLife();
         }
     }
 
-    private void OnCollisionStay2D(Collision2D other) {
-        if(other.gameObject.tag == "Player"){
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
             anim.SetBool("isAttacking", true);
         }
     }
 
-    private void OnCollisionExit2D(Collision2D other) {
-        if(other.gameObject.tag == "Player"){
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
             anim.SetBool("isAttacking", false);
         }
     }
-
-    
 }
