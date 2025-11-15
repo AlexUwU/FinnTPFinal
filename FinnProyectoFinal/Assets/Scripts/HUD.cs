@@ -11,20 +11,28 @@ public class HUD : MonoBehaviour
     public TextMeshProUGUI point;
     public TextMeshProUGUI coins;
 
-    // Start is called before the first frame update
+    public TextMeshProUGUI speedText;
+    public TextMeshProUGUI damageText;
+
     void Awake()
     {
     }
+
     void Start()
     {
-        
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Puntos y monedas
         point.text = gameManager.TotalPoints.ToString();
         coins.text = gameManager.TotalCoins.ToString();
+
+        // Mostrar VELOCIDAD (base + bonos)
+        speedText.text = $"{GameManager.CurrentSpeed:F1}";
+
+        // Mostrar DAÑO (base + bonos)
+        damageText.text = $"{GameManager.CurrentDamage:F1}";
     }
 
     public void DesactiveLife(int i)
@@ -37,3 +45,4 @@ public class HUD : MonoBehaviour
         lifes[i].SetActive(true);
     }
 }
+

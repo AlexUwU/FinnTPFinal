@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,47 +8,62 @@ public class GameManager : MonoBehaviour
     public HUD hud;
     public static int lifes = 5;
     public static int maxLifes = 5;
-    public static GameManager Instance {get; private set;}
+    public static GameManager Instance { get; private set; }
 
-    public int TotalPoints {get {return totalPoints; }}
-    public int TotalCoins {get {return totalCoins;} }
-    public int TotalCoinsGeneral {get {return totalCoinsGeneral;} }
-    public int MaxPoint {get {return maxPoint;} }
-    public int NowPoint {get {return nowPoint;} }
+    public int TotalPoints { get { return totalPoints; } }
+    public int TotalCoins { get { return totalCoins; } }
+    public int TotalCoinsGeneral { get { return totalCoinsGeneral; } }
+    public int MaxPoint { get { return maxPoint; } }
+    public int NowPoint { get { return nowPoint; } }
 
     public static int maxPoint = 15000;
     public static int nowPoint = 0;
     public static int totalPoints;
     public static int totalCoins;
     public static int totalCoinsGeneral = 5000;
-    public static float degradeLife = 10;
+
+    // -------- Valores base (modificados por Upgrades) --------
+    public static float degradeLife = 10f;
     public static float speedPlayer = 4f;
+
+    // -------- Bonos SOLO de esta partida (pickups) --------
+    public static float runDamageBonus = 0f;
+    public static float runSpeedBonus = 0f;
+
+    // -------- Valores finales usados en el juego --------
+    public static float CurrentDamage { get { return degradeLife + runDamageBonus; } }
+    public static float CurrentSpeed { get { return speedPlayer + runSpeedBonus; } }
 
     public AudioClip damageProtagonist;
 
-    
-    // Start is called before the first frame update
     void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
     }
+
     void Start()
     {
     }
 
-    // Update is called once per frame
     void Update()
     {
+    }
+
+    // Llamar al iniciar / terminar una partida
+    public static void ResetRunBonuses()
+    {
+        runDamageBonus = 0f;
+        runSpeedBonus = 0f;
     }
 
     public void DecreaseLife()
     {
         lifes -= 1;
         SoundManager.Instance.audioSource.PlayOneShot(damageProtagonist, 1f);
-        if(lifes == 0)
+        if (lifes == 0)
         {
             SceneManager.LoadScene("GameOver");
             AddCoins();
@@ -61,7 +75,7 @@ public class GameManager : MonoBehaviour
 
     public bool AddLife()
     {
-        if(lifes == maxLifes)
+        if (lifes == maxLifes)
         {
             return false;
         }
@@ -77,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     public void AddCoins()
     {
-        totalCoins += (totalPoints * 5)/100;
+        totalCoins += (totalPoints * 5) / 100;
         AddTotalCoins();
         Debug.Log(totalCoins);
     }
@@ -90,7 +104,7 @@ public class GameManager : MonoBehaviour
 
     public void addNowPoint()
     {
-        if(totalPoints > nowPoint)
+        if (totalPoints > nowPoint)
         {
             nowPoint = totalPoints;
         }
@@ -99,15 +113,5 @@ public class GameManager : MonoBehaviour
             maxPoint = totalPoints;
         }
     }
-
-    // public void addMaxPoint()
-    // {
-    //     if(nowPoint > maxPoint)
-    //     {
-    //         maxPoint = nowPoint;
-    //     }else
-    //     {
-    //         nowPoint = totalPoints;
-    //     }
-    // }
 }
+

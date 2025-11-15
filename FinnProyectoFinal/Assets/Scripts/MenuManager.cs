@@ -14,12 +14,17 @@ public class MenuManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
-    
+
     public void Play()
     {
-        SceneManager.LoadScene("LevelOne");
+        // Reiniciar puntos de la run
         GameManager.totalPoints = 0;
         GameManager.totalCoins = 0;
+
+        // Reiniciar bonos solo de esta partida
+        GameManager.ResetRunBonuses();
+
+        SceneManager.LoadScene("LevelOne");
     }
 
     public void Development()
@@ -34,6 +39,9 @@ public class MenuManager : MonoBehaviour
 
     public void ReturnMenu()
     {
+        // Por si se vuelve desde otra escena, reseteamos bonos de partida
+        GameManager.ResetRunBonuses();
+
         SceneManager.LoadScene("StartGame");
     }
 
@@ -42,3 +50,4 @@ public class MenuManager : MonoBehaviour
         audioMixer.SetFloat("Volume", volume);
     }
 }
+
