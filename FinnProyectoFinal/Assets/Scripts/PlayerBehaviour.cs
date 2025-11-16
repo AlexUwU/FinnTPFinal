@@ -14,10 +14,13 @@ public class PlayerBehaviour : MonoBehaviour
     public float horizontal;
     public float vertical;
 
+    //  AUDIO PARA PICKUPS (NUEVO)
+    public AudioSource upgradeSound;
+
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked; //Bloquea el cursor para que no salga de pantalla
-        Cursor.visible = false; //Pone invisible al cursor del mouse
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         animation = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
     }
@@ -34,23 +37,15 @@ public class PlayerBehaviour : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
 
         if (enableMove == false)
-        {
             return;
-        }
 
-        // Usar velocidad final (upgrades + bonos de partida)
+        //  velocidad final (upgrades + bonos)
         rigidBody.velocity = new Vector2(horizontal, vertical).normalized * GameManager.CurrentSpeed;
 
-        if (horizontal != 0f || vertical != 0f)
-        {
-            animation.SetBool("isRun", true);
-        }
-        else
-        {
-            animation.SetBool("isRun", false);
-        }
+        animation.SetBool("isRun", (horizontal != 0f || vertical != 0f));
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) ||
+            Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             CinemachineScreemShake.Instance.moveCamera(1, 1.2f, 0.15f);
             animation.SetBool("isAttack", true);
@@ -59,12 +54,13 @@ public class PlayerBehaviour : MonoBehaviour
         {
             animation.SetBool("isAttack", false);
         }
+
         OnDirection(horizontal);
     }
 
     void OnDirection(float horizontal)
     {
-        if ((viewRight == true && horizontal < 0) || (viewRight == false && horizontal > 0))
+        if ((viewRight && horizontal < 0) || (!viewRight && horizontal > 0))
         {
             viewRight = !viewRight;
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
@@ -98,9 +94,7 @@ public class PlayerBehaviour : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
-        {
             animation.SetBool("isDamage", true);
-        }
     }
 
     void OnCollisionExit2D(Collision2D other)
@@ -112,4 +106,3 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 }
-
