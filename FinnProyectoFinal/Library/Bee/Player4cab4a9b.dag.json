@@ -562,15 +562,15 @@
         "D:/Aplicaciones/Unity Installs/2022.3.62f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll",
         "D:/Aplicaciones/Unity Installs/2022.3.62f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
         "D:/Aplicaciones/Unity Installs/2022.3.62f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Cinemachine.dll",
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Cinemachine.dll",
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
         "D:/Aplicaciones/Unity Installs/2022.3.62f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "D:/Aplicaciones/Unity Installs/2022.3.62f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",
         "D:/Aplicaciones/Unity Installs/2022.3.62f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.ComponentModel.Composition.dll",
@@ -1476,7 +1476,7 @@
       "DisplayName": "Copying Assembly-CSharp.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll"
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll"
       ],
       "Outputs": [
         "C:/Users/alexg/OneDrive/Escritorio/game/FinnProyectoFinal_Data/Managed/Assembly-CSharp.dll"
@@ -1488,7 +1488,7 @@
       "DisplayName": "Copying Unity.Timeline.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll"
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll"
       ],
       "Outputs": [
         "C:/Users/alexg/OneDrive/Escritorio/game/FinnProyectoFinal_Data/Managed/Unity.Timeline.dll"
@@ -1500,7 +1500,7 @@
       "DisplayName": "Copying UnityEngine.UI.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
       ],
       "Outputs": [
         "C:/Users/alexg/OneDrive/Escritorio/game/FinnProyectoFinal_Data/Managed/UnityEngine.UI.dll"
@@ -1512,7 +1512,7 @@
       "DisplayName": "Copying Unity.TextMeshPro.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll"
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll"
       ],
       "Outputs": [
         "C:/Users/alexg/OneDrive/Escritorio/game/FinnProyectoFinal_Data/Managed/Unity.TextMeshPro.dll"
@@ -1524,7 +1524,7 @@
       "DisplayName": "Copying Unity.VisualScripting.Core.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll"
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll"
       ],
       "Outputs": [
         "C:/Users/alexg/OneDrive/Escritorio/game/FinnProyectoFinal_Data/Managed/Unity.VisualScripting.Core.dll"
@@ -1536,7 +1536,7 @@
       "DisplayName": "Copying Unity.VisualScripting.State.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll"
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll"
       ],
       "Outputs": [
         "C:/Users/alexg/OneDrive/Escritorio/game/FinnProyectoFinal_Data/Managed/Unity.VisualScripting.State.dll"
@@ -1548,7 +1548,7 @@
       "DisplayName": "Copying Cinemachine.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Cinemachine.dll"
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Cinemachine.dll"
       ],
       "Outputs": [
         "C:/Users/alexg/OneDrive/Escritorio/game/FinnProyectoFinal_Data/Managed/Cinemachine.dll"
@@ -1560,7 +1560,7 @@
       "DisplayName": "Copying Unity.VisualScripting.Flow.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll"
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll"
       ],
       "Outputs": [
         "C:/Users/alexg/OneDrive/Escritorio/game/FinnProyectoFinal_Data/Managed/Unity.VisualScripting.Flow.dll"
@@ -1572,7 +1572,7 @@
       "DisplayName": "Copying Unity.VisualScripting.Antlr3.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+        "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
       "Outputs": [
         "C:/Users/alexg/OneDrive/Escritorio/game/FinnProyectoFinal_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
@@ -2513,6 +2513,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/Player4cab4a9b.dag.json",
-  "PayloadsFile": "C:/Users/alexg/Downloads/FinnTPFinal-RamaPablo/FinnProyectoFinal/Library/Bee/Player4cab4a9b.dag.payloads",
+  "PayloadsFile": "C:/Users/alexg/OneDrive/Escritorio/FinnTPFinal/FinnProyectoFinal/Library/Bee/Player4cab4a9b.dag.payloads",
   "RelativePathToRoot": "../.."
 }

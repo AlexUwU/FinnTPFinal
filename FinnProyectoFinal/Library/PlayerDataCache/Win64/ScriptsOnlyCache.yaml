@@ -7,7 +7,6 @@ ScriptsOnlyBuild:
     - DamagePickup
     - EnemyBehaviour
     - EnemyGenerator
-    - FPSCounter
     - GameManager
     - HUD
     - Intro
@@ -46,8 +45,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -118,12 +119,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: UnityEngine.AudioModule
     fullTypeName: UnityEngine.AudioSource
     methodName: Play
@@ -133,9 +128,12 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
-  - assembly: UnityEngine.AudioModule
-    fullTypeName: UnityEngine.AudioSource
-    methodName: Play
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.AudioModule
     fullTypeName: UnityEngine.AudioSource
     methodName: Play
@@ -148,30 +146,21 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: Assembly-CSharp
     fullTypeName: Upgrades
     methodName: UpgradeVelocity
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuManager
-    methodName: Exit
-  - assembly: Assembly-CSharp
-    fullTypeName: Upgrades
-    methodName: UpgradeDamage
-  - assembly: Assembly-CSharp
-    fullTypeName: Upgrades
-    methodName: UpgradeLife
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -181,6 +170,36 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.AudioModule
     fullTypeName: UnityEngine.AudioSource
     methodName: Play
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: Exit
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
+  - assembly: Assembly-CSharp
+    fullTypeName: Upgrades
+    methodName: UpgradeDamage
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
+  - assembly: Assembly-CSharp
+    fullTypeName: Upgrades
+    methodName: UpgradeLife
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -190,15 +209,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Intro
     methodName: SkipIntro
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: UnityEngine.AudioModule
     fullTypeName: UnityEngine.AudioSource
     methodName: Play
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.AudioModule
     fullTypeName: UnityEngine.AudioSource
     methodName: Play
@@ -208,20 +227,35 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MenuPause
     methodName: Return
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: ReturnMenu
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: ReturnMenu
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
+    methodName: Play
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
     methodName: Play
   sceneClasses:
     Assets/Scenes/GameOver.unity:
@@ -258,21 +292,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2728}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2950}
     - Class: 114
-      Script: {instanceID: 3944}
+      Script: {instanceID: 3966}
     - Class: 114
-      Script: {instanceID: 5412}
+      Script: {instanceID: 5448}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 6098}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 6242}
     - Class: 114
-      Script: {instanceID: 6538}
+      Script: {instanceID: 6590}
     - Class: 114
-      Script: {instanceID: 7664}
+      Script: {instanceID: 7722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -325,15 +359,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 2394}
+      Script: {instanceID: 2404}
     - Class: 114
-      Script: {instanceID: 2560}
+      Script: {instanceID: 2572}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2728}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2950}
     - Class: 114
-      Script: {instanceID: 6538}
+      Script: {instanceID: 6590}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -402,75 +436,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1832}
     - Class: 114
-      Script: {instanceID: 2420}
+      Script: {instanceID: 2430}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2728}
     - Class: 114
-      Script: {instanceID: 2720}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2798}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2950}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 3030}
     - Class: 114
-      Script: {instanceID: 3352}
+      Script: {instanceID: 3720}
     - Class: 114
-      Script: {instanceID: 3700}
-    - Class: 114
-      Script: {instanceID: 3944}
-    - Class: 114
-      Script: {instanceID: 3994}
+      Script: {instanceID: 3966}
     - Class: 114
       Script: {instanceID: 4016}
     - Class: 114
-      Script: {instanceID: 4092}
+      Script: {instanceID: 4038}
     - Class: 114
-      Script: {instanceID: 4766}
+      Script: {instanceID: 4114}
     - Class: 114
-      Script: {instanceID: 5032}
+      Script: {instanceID: 4796}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 5066}
     - Class: 114
-      Script: {instanceID: 5244}
+      Script: {instanceID: 5106}
     - Class: 114
-      Script: {instanceID: 5286}
+      Script: {instanceID: 5278}
     - Class: 114
-      Script: {instanceID: 5338}
+      Script: {instanceID: 5322}
     - Class: 114
-      Script: {instanceID: 5412}
+      Script: {instanceID: 5374}
     - Class: 114
-      Script: {instanceID: 5580}
+      Script: {instanceID: 5448}
     - Class: 114
-      Script: {instanceID: 5978}
+      Script: {instanceID: 5618}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 6018}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 6098}
     - Class: 114
-      Script: {instanceID: 6518}
+      Script: {instanceID: 6242}
     - Class: 114
-      Script: {instanceID: 6538}
+      Script: {instanceID: 6570}
     - Class: 114
-      Script: {instanceID: 6546}
+      Script: {instanceID: 6590}
     - Class: 114
-      Script: {instanceID: 6962}
+      Script: {instanceID: 6598}
     - Class: 114
-      Script: {instanceID: 6986}
+      Script: {instanceID: 7018}
     - Class: 114
-      Script: {instanceID: 6990}
+      Script: {instanceID: 7042}
     - Class: 114
-      Script: {instanceID: 7138}
+      Script: {instanceID: 7046}
     - Class: 114
-      Script: {instanceID: 7246}
+      Script: {instanceID: 7194}
     - Class: 114
-      Script: {instanceID: 7664}
+      Script: {instanceID: 7302}
     - Class: 114
-      Script: {instanceID: 8248}
+      Script: {instanceID: 7722}
+    - Class: 114
+      Script: {instanceID: 8314}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -545,49 +577,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 2266}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2728}
     - Class: 114
-      Script: {instanceID: 2720}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2950}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 3030}
     - Class: 114
-      Script: {instanceID: 3352}
+      Script: {instanceID: 4114}
     - Class: 114
-      Script: {instanceID: 4092}
+      Script: {instanceID: 4244}
     - Class: 114
-      Script: {instanceID: 4222}
+      Script: {instanceID: 4360}
     - Class: 114
-      Script: {instanceID: 4338}
+      Script: {instanceID: 4644}
     - Class: 114
-      Script: {instanceID: 4620}
+      Script: {instanceID: 4796}
     - Class: 114
-      Script: {instanceID: 4766}
+      Script: {instanceID: 5322}
     - Class: 114
-      Script: {instanceID: 5286}
+      Script: {instanceID: 5374}
     - Class: 114
-      Script: {instanceID: 5338}
+      Script: {instanceID: 5448}
     - Class: 114
-      Script: {instanceID: 5412}
+      Script: {instanceID: 6098}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 6242}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 6590}
     - Class: 114
-      Script: {instanceID: 6538}
+      Script: {instanceID: 6598}
     - Class: 114
-      Script: {instanceID: 6546}
+      Script: {instanceID: 7018}
     - Class: 114
-      Script: {instanceID: 6962}
+      Script: {instanceID: 7042}
     - Class: 114
-      Script: {instanceID: 6986}
+      Script: {instanceID: 7268}
     - Class: 114
-      Script: {instanceID: 7212}
-    - Class: 114
-      Script: {instanceID: 7664}
+      Script: {instanceID: 7722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1455,7 +1485,7 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerStayMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6d19380417d85ddcc8dc51ddea7f610e
+      Hash: d1bfe4de03a8780c9f69d349fabc339c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerBehaviour
